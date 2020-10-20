@@ -4,6 +4,14 @@
 
 html {
   height: 100%;
+
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 575px) {
+    font-size: 12px;
+  }
 }
 
 body {
@@ -31,11 +39,15 @@ h1, h2, h3, p {
 .tel {
   display: flex;
   flex-direction: column;
-  margin-right: 40px;
+  margin-right: 2.5rem;
+
+  @media screen and (max-width: 575px) {
+    margin-right: 1rem;
+  }
 
   &__text {
     font-size: 0.875rem;
-    margin-bottom: 15px;
+    margin-bottom: 1.071em;
     text-align: right;
   }
 
@@ -47,14 +59,14 @@ h1, h2, h3, p {
     text-align: right;
     transition: color 0.3s linear;
 
-    &:not(:last-of-type) {
-      margin-bottom: 5px;
-    }
-
     @media screen and (min-width: 992px) {
       &:hover {
         color: lighten( $color-dark, 40%);
       }
+    }
+
+    @media screen and (max-width: 575px) {
+      font-size: 1rem;
     }
   }
 }
@@ -74,6 +86,10 @@ h1, h2, h3, p {
     font-size: 0.875rem;
     font-weight: 700;
     z-index: 3;
+
+    @media screen and (max-width: 575px) {
+      font-size: 0.75rem;
+    }
   }
  
   &--red {
@@ -110,7 +126,7 @@ h1, h2, h3, p {
     font-size: 0.875rem;
     text-align: right;
     text-decoration: underline;
-    margin-bottom: 12px;
+    margin-bottom: 0.857em;
     transition: color 0.3s linear;
 
     @media screen and (min-width: 992px) {
@@ -121,6 +137,10 @@ h1, h2, h3, p {
   }
 
   &__callback {
-    padding: 15px 30px;
+    padding: 0.937rem 1.874rem;
+
+    @media screen and (max-width: 575px) {
+      padding: 0.937rem 1.2rem;
+    }
   }
 }
