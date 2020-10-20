@@ -1,0 +1,15 @@
+footer.footer
+  .container.footer__container
+    a(href="/", class="logo")
+      picture.picture
+        source(srcset="./img/header/logo/logo.webp, ./img/header/logo/logo@2x.webp 2x", type="image/webp", class="img")
+        img(src="#", alt="logo", srcset="./img/header/logo/logo.png, ./img/header/logo/logo@2x.png 2x", class="img")
+    .footer__contacts
+      .tel
+        p.tel__text Есть вопросы? Звоните!
+        a(href="tel:88002004017", class="tel__number") 8 (800) 200-40-17
+        a(href="tel:+74994041431", class="tel__number") +7 (499) 404-14-31
+      .other
+        a(href="mailto:info@elockagori.ru", class="other__mail") info@elockagori.ru
+        button(class="button button--red callback other__callback")
+          span.button__text ЗАКАЗАТЬ ЗВОНОК
