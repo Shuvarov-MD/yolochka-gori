@@ -1,0 +1,16 @@
+section.hero
+  .container
+    .hero__content
+      h1.hero__title
+        span.hero__title--bold Используйте все возможности 
+        span.hero__subtitle приближающегося праздника!
+      p.hero__text Закажите новогодний набор сейчас и получите дополнительную 
+        strong.hero__text--bold скидку 15% 
+        | от оптовых цен!
+      form(action="#", method="GET", class="form hero__form")
+        h3.form__title.title--center ПОЛУЧИ ОПТОВЫЕ ЦЕНЫ СЕЙЧАС
+        .form__content.form__content--flex
+          input(type="text", name="hero-form--name", placeholder="Ваше имя", class="input hero__input")
+          input(type="tel", name="hero-form--tel", placeholder="Ваш телефон", class="input hero__input")
+        button(type="submit", class="button button--red hero__button") 
+          span.button__text СКАЧАТЬ ПРАЙС

@@ -1,0 +1,39 @@
+.menu {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  background-color: $color-accent;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 41.25rem;
+  }
+
+  &__item {
+    @media screen and (max-width: 575px) {
+      width: 50%;
+      text-align: center;
+      
+      &:first-of-type, &:nth-of-type(2) {
+        margin-bottom: 0.833em;
+      }
+    }
+  }
+
+  &__link {
+    color: $color-light;
+    font-size: 1.125rem;
+    text-decoration: underline;
+    transition: color 0.3s linear;
+
+    @media screen and (min-width: 992px) {
+      &:hover {
+        color: darken($color-light, 25%);
+      }
+    }
+  }
+}

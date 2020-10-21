@@ -1,0 +1,111 @@
+.hero {
+  padding-top: 4.687rem;
+  padding-bottom: 4.375rem;
+  background: url('../img/hero/background/hero-bg.jpg') center / cover no-repeat;
+
+  @media screen and (max-width: 991px) {
+    background-color:darken($color-light, 5%);
+    background-image: none;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    color: $color-light;
+    font-size: 3.125rem;
+    font-weight: 700;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: normal;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 991px) {
+      font-size: 2.5rem;
+    }
+    
+    &--bold {
+      display: inline-flex;
+      justify-content: center;
+      padding-left: 0.2em;
+      padding-right: 0.2em;
+      background-image: linear-gradient(to top, $color-accent 0%, lighten($color-accent, 10%) 100%);
+    
+      @media screen and (max-width: 767px) {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &__subtitle {
+    padding-left: 0.681em;
+    padding-right: 0.681em;
+    display: inline-flex;
+    justify-content: center;
+    font-size: 2.75rem;
+    background-image: linear-gradient(to top, $color-accent 0%, lighten($color-accent, 10%) 100%);
+
+    @media screen and (max-width: 991px) {
+      font-size: 2.187rem;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__text {
+    max-width: 40.625rem;
+    color: $color-dark;
+    font-size: 1.812rem;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 4.137em;
+
+    &--bold {
+      font-weight: 700;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 3.125rem;
+    box-shadow: 0 0.875rem 2.5rem rgba($color-dark, 0.15);
+    background-color: $color-light;
+
+    @media screen and (max-width: 575px) {
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+  }
+
+  &__input {
+    width: 16.25rem;
+
+    @media screen and (max-width: 575px) {
+      width: 270px;
+    }
+
+    &:first-of-type {
+      margin-right: 1.25rem;
+
+      @media screen and (max-width: 575px) {
+        margin-right: 0;
+        margin-bottom: 1.25rem;
+      }
+    }
+  }
+
+  &__button {
+    padding: 1.428em 5.571em;
+  }
+}
