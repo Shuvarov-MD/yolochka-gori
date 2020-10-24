@@ -3,11 +3,6 @@
   padding-bottom: 4.375rem;
   background: url('../img/hero/background/hero-bg.jpg') center / cover no-repeat;
 
-  @media screen and (max-width: 991px) {
-    background-color:darken($color-light, 5%);
-    background-image: none;
-  }
-
   &__content {
     display: flex;
     flex-direction: column;

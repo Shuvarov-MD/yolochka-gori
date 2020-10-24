@@ -1,0 +1,52 @@
+.discount {
+  padding-bottom: 3.75rem;
+  color: $color-light;
+  background: $color-secondary url('../img/discount/background/discount-bg.jpg') center / cover no-repeat;
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__content {
+    max-width: 45.312rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 3.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    display: flex;
+    justify-content: center;
+    font-size: 2.063rem;
+    font-weight: 400;
+    margin-top: 0.606em;
+  }
+
+  &__text {
+    font-size: 1.875rem;
+    margin-top: 1.333em;
+  }
+
+  &__form  {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.125rem;
+  }
+
+  &__input {
+    width: 25.625rem;
+    margin-bottom: 0.625rem;
+  }
+
+  &__button {
+    padding: 1.25rem;
+    margin-top: 0.625rem;
+  }
+}
