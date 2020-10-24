@@ -1,0 +1,91 @@
+.sets {
+  background: lighten($color-dark, 10%) url('../img/sets/background/sets-bg.jpg') center / cover no-repeat;
+
+  &__title {
+    color: $color-light;
+    margin-bottom: 0.555em;
+  }
+  
+  &__text {
+    color: $color-light;
+    font-size: 1.125rem;
+    margin-bottom: 3.333em;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__card {
+    width: 49%;
+    max-width: 28.75rem;
+    background-color: $color-light;
+    padding: 1.875rem 3.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: 991px) {
+      padding-left: 1.875rem;
+      padding-right: 1.875rem;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+
+      &:not(:last-of-type) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &__sizes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.875rem;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 2.25rem;
+
+    &:not(:last-of-type) {
+      margin-bottom: 1.562em;
+    }
+
+    &::before {
+      content: url('../img/sets/icon/icon-spruce.png');
+      position: absolute;
+      top: -0.625rem;
+      left: 0;
+    }
+  }
+
+  &__timing {
+    font-size: 1.25rem;
+
+    &--bold {
+      font-weight: 700;
+    }
+  }
+
+  &__button {
+    margin-top: 1.875rem;
+    padding: 1em 2.687em;
+    text-transform: uppercase;
+  }
+}
