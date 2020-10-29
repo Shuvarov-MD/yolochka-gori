@@ -1,0 +1,80 @@
+.production {
+  background: #fff url('../img/production/background/production-bg.jpg') center / cover no-repeat;
+
+  &__container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  &__title {
+    margin-bottom: 2.222em;
+  }
+
+  &__wrap {
+    position: relative;
+    overflow: hidden;
+
+    @media screen and (max-width: 767px) {
+      max-width: 21.642rem;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: 575px) {
+      max-width: 25.25rem;
+      margin: 0 auto;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    
+    @media screen and (max-width: 767px) {
+      padding-left: 2.142rem;
+      padding-right: 2.142rem;
+    }
+
+    @media screen and (max-width: 575px) {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+  }
+}
+
+.figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-of-type) {
+    margin-right: 0.625rem;
+  }
+
+  @media screen and (max-width: 767px) {
+    min-width: 17.357rem;
+    
+    &:not(:last-of-type) {
+      margin-right: 2.142rem;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    min-width: 20.25rem;
+    
+    &:not(:last-of-type) {
+      margin-right: 2.5rem;
+    }
+  }
+}
+
+.figcaption {
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 1.111em;
+
+  @media screen and (max-width: 991px) {
+    font-size: 1rem;
+  }
+}
+

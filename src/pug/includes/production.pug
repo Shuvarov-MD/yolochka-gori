@@ -1,0 +1,24 @@
+.production
+  .container.production__container
+    h2.title.title--center.production__title Наше производство
+    .production__wrap
+      svg.icon.icon--left
+        use(xlink:href="./img/production/sprite.svg#production-left")
+      .production__content
+        figure.figure
+          picture.picture
+            source(srcset="../img/production/production-1/production-1.webp, ../img/production/production-1/production-1@2x.webp 2x", type="image/webp", class="img")
+            img(src="#", alt="Контроль качества продукции", srcset="../img/production/production-1/production-1.jpg, ../img/production/production-1/production-1@2x.jpg 2x", class="img")
+          figcation.figcaption Контроль качества продукции
+        figure.figure
+          picture.picture
+            source(srcset="../img/production/production-2/production-2.webp, ../img/production/production-2/production-2@2x.webp 2x", type="image/webp", class="img")
+            img(src="#", alt="Пример выкладки", srcset="../img/production/production-2/production-2.jpg, ../img/production/production-2/production-2@2x.jpg 2x", class="img")
+          figcation.figcaption Пример выкладки
+        figure.figure
+          picture.picture
+            source(srcset="../img/production/production-3/production-3.webp, ../img/production/production-3/production-3@2x.webp 2x", type="image/webp", class="img")
+            img(src="#", alt="Сопутствующие товары", srcset="../img/production/production-3/production-3.webp, ../img/production/production-3/production-3@2x.webp 2x", class="img")
+          figcation.figcaption Сопутствующие товары
+      svg.icon.icon--right
+        use(xlink:href="./img/production/sprite.svg#production-right")
