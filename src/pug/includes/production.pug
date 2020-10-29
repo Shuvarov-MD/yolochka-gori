@@ -1,9 +1,9 @@
-.production
-  .container.production__container
+.production.section
+  .container
     h2.title.title--center.production__title Наше производство
     .production__wrap
-      svg.icon.icon--left
-        use(xlink:href="./img/production/sprite.svg#production-left")
+      svg.icon.icon--left.production__icon
+        use(xlink:href="./img/sprite.svg#production-left")
       .production__content
         figure.figure
           picture.picture
@@ -20,5 +20,5 @@
             source(srcset="../img/production/production-3/production-3.webp, ../img/production/production-3/production-3@2x.webp 2x", type="image/webp", class="img")
             img(src="#", alt="Сопутствующие товары", srcset="../img/production/production-3/production-3.webp, ../img/production/production-3/production-3@2x.webp 2x", class="img")
           figcation.figcaption Сопутствующие товары
-      svg.icon.icon--right
-        use(xlink:href="./img/production/sprite.svg#production-right")
+      svg.icon.icon--right.production__icon
+        use(xlink:href="./img/sprite.svg#production-right")
