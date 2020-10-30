@@ -1,9 +1,8 @@
-.artificial-spruce {
-  background: lighten($color-dark, 10%) url('../img/artificial-spruce/background/artificial-spruce-bg.jpg') center / cover no-repeat;
+.natural-spruce {
+  background-color: #f4f4f4;
 
   &__title {
-    color: $color-light;
-    margin-bottom: 1.388em;
+    margin-bottom: 50px;
   }
 
   &__wrap {
@@ -34,10 +33,8 @@
   &__content {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 
     @media screen and (max-width: 991px) {
-      flex-wrap: nowrap;
       position: absolute;
       top: 0;
       left: 1.25rem;
@@ -53,7 +50,7 @@
   }
 
   &__icon {
-    fill: $color-light;
+    fill: $color-dark;
 
     @media screen and (max-width: 991px) {
       display: block;
