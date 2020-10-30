@@ -1,0 +1,59 @@
+.decorations-spruce {
+  background-color: darken($color-light, 5%);
+
+  &__title {
+    margin-bottom: 1.388em;
+  }
+
+  &__wrap {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+
+    @media screen and (max-width: 991px) {
+      max-width: 46.25rem;
+      height: 30rem;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+
+    @media screen and (max-width: 767px) {
+      max-width: 31.785rem;
+      padding-left: 1.428rem;
+      padding-right: 1.428rem;
+    }
+
+    @media screen and (max-width: 575px) {
+      max-width: 17.083rem;
+      padding-left: 1.666rem;
+      padding-right: 1.666rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 991px) {
+      position: absolute;
+      top: 0;
+      left: 1.25rem;
+    }
+
+    @media screen and (max-width: 767px) {
+      left: 1.428rem;
+    }
+
+    @media screen and (max-width: 575px) {
+      left: 1.666rem;
+    }
+  }
+
+  &__icon {
+    fill: $color-dark;
+
+    @media screen and (max-width: 991px) {
+      display: block;
+    }
+  }
+}
