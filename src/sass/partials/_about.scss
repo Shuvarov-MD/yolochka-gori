@@ -3,6 +3,25 @@
     margin-bottom: 2.222em;
   }
 
+  &__wrap {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+
+    @media screen and (max-width: 767px) {
+      max-width: 29.428rem;
+      height: 11.428rem;
+      padding-left: 1.428rem;
+      padding-right: 1.428rem;
+    }
+
+    @media screen and (max-width: 575px) {
+      max-width: 18rem;
+      padding-left: 1.666rem;
+      padding-right: 1.666rem;
+    }
+  }
+
   &__content {
     display: flex;
     justify-content: space-between;
@@ -11,6 +30,17 @@
     max-width: 56.25rem;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (max-width: 767px) {
+      position: absolute;
+      top: 0;
+      left: 1.428rem;
+      flex-wrap: nowrap;
+    }
+
+    @media screen and (max-width: 575px) {
+      left: 1.666rem;
+    }
   }
 
   &__item {
@@ -24,11 +54,27 @@
     }
 
     @media screen and (max-width: 767px) {
-      flex-basis: 50%;
-
-      &:first-of-type, &:nth-of-type(2) {
-        margin-bottom: 1.25rem;
+      min-width: 12.571rem;
+      
+      &:not(:last-of-type) {
+        margin-right: 1.428rem;
       }
+    }
+
+    @media screen and (max-width: 575px) {
+      min-width: 14.666rem;
+      
+      &:not(:last-of-type) {
+        margin-right: 1.666rem;
+      }
+    }
+  }
+
+  &__icon {
+    fill: $color-dark;
+
+    @media screen and (max-width: 767px) {
+      display: block;
     }
   }
 }
