@@ -1,7 +1,7 @@
 .contacts {
   padding-top: 1.875rem;
   padding-bottom: 1.875rem;
-  background: lighten($color-dark, 10%) url('../img/contacts/background/contacts-bg.jpg') center / cover no-repeat;
+  background: darken($color-light, 15%) url('../img/contacts/background/contacts-bg.jpg') center / cover no-repeat;
 
   &__container {
     @media screen and (max-width: 575px) {
