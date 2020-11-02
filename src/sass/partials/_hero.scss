@@ -1,7 +1,7 @@
 .hero {
   padding-top: 4.687rem;
   padding-bottom: 4.375rem;
-  background: url('../img/hero/background/hero-bg.jpg') center / cover no-repeat;
+  background: darken($color-light, 5%) url('../img/hero/background/hero-bg.jpg') center / cover no-repeat;
 
   &__content {
     display: flex;
