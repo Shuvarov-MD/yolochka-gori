@@ -202,6 +202,29 @@ h1, h2, h3, p {
     margin-bottom: 1.333em;
   }
 
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0.625rem;
+  }
+
+  &__text {
+    font-size: 0.85rem;
+
+    &:last-of-type {
+      margin-top: 0.441em;
+    }
+  }
+
+  &__output {
+    font-weight: 700;
+  }
+
+  &__select, &__option {
+    font-size: 0.85rem;
+  }
+
   &__content {
     &--flex {
       display: flex;
@@ -352,6 +375,12 @@ h1, h2, h3, p {
 
   &--right {
     right: 0;
+  }
+
+  &__close {
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
   }
 }
 
