@@ -73,8 +73,8 @@
   &__icon {
     fill: $color-dark;
 
-    @media screen and (max-width: 767px) {
-      display: block;
-    }
+    // @media screen and (max-width: 767px) {
+    //   display: block;
+    // }
   }
 }

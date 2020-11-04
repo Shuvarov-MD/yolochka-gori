@@ -33,10 +33,6 @@
 
   &__icon {
     fill: $color-light;
-
-    @media screen and (max-width: 767px) {
-      display: block;
-    }
   }
 
   &__content {

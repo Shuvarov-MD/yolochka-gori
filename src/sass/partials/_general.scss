@@ -308,12 +308,14 @@ h1, h2, h3, p {
   }
 
   @media screen and (max-width: 575px) {
-    min-width: 25rem;
+    min-width: 22.666rem;
 
     &:not(:last-of-type) {
       margin-right: 1.666rem;
     }
   }
+
+
 
   &__picture {
     width: 8.75rem;
@@ -381,6 +383,10 @@ h1, h2, h3, p {
     display: block;
     width: 1.25rem;
     height: 1.25rem;
+  }
+
+  &--active {
+    display: block;
   }
 }
 

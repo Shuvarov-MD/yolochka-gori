@@ -22,7 +22,7 @@
     }
 
     @media screen and (max-width: 575px) {
-      max-width: 28.333rem;
+      max-width: 26rem;
       height: 30.833rem;
       padding-left: 1.666rem;
       padding-right: 1.666rem;
@@ -53,8 +53,8 @@
   &__icon {
     fill: $color-dark;
 
-    @media screen and (max-width: 991px) {
-      display: block;
-    }
+    // @media screen and (max-width: 991px) {
+    //   display: block;
+    // }
   }
 }
