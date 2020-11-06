@@ -1,7 +1,7 @@
 .popup {
-  &--active {
-    display: flex;
-  }
+  // &--active {
+  //   display: flex;
+  // }
 
   &__wrapper {
     position: fixed;
@@ -15,6 +15,10 @@
     align-items: center;
     flex-direction: column;
     background: rgba($color-dark, 0.4);
+
+    &.popup--active {
+      display: flex;
+    }
   }
 
   &__block {
@@ -23,6 +27,10 @@
     width: 20rem;
     padding: 1.875rem;
     flex-direction: column;
+
+    &.popup--active {
+      display: flex;
+    }
 
     &--callback {
       display: none;
