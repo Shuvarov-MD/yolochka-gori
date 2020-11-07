@@ -1,5 +1,5 @@
 const createRequest = data => fetch('./php/server.php', {
-  method: 'GET',
+  method: 'POST',
   headers: {
     'Content-Type': 'application/json'
   },

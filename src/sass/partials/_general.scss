@@ -506,3 +506,35 @@ h1, h2, h3, p {
     }
   }
 }
+
+.sk-three-bounce {
+  width: 4rem;
+  margin: auto;
+  text-align: center;
+
+  .sk-child {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: $color-light;
+
+    border-radius: 100%;
+    display: inline-block;
+    animation: sk-three-bounce $animationDuration ease-in-out 0s infinite both;
+  }
+
+  .sk-bounce-1 {
+    animation-delay: -$delayRange;
+  }
+  .sk-bounce-2 {
+    animation-delay: (-$delayRange / 2);
+  }
+}
+
+@keyframes sk-three-bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1.0);
+  }
+}
