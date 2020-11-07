@@ -26,7 +26,6 @@ const maskPhone = (selector, masked = '+7 (___) ___-__-__') => {
     if (event.type === "blur" && this.value.length < 5) {
       this.value = "";
     }
-
   };
 
   for (const elem of elems) {
@@ -34,7 +33,6 @@ const maskPhone = (selector, masked = '+7 (___) ___-__-__') => {
     elem.addEventListener("focus", mask);
     elem.addEventListener("blur", mask);
   }
-
 };
 
 maskPhone('input[type="tel"]');
