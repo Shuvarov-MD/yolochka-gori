@@ -508,6 +508,8 @@ h1, h2, h3, p {
 }
 
 .sk-three-bounce {
+  position: relative;
+  z-index: 5;
   width: 4rem;
   margin: auto;
   text-align: center;

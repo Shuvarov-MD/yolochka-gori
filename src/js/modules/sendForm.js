@@ -38,6 +38,7 @@ const sendForm = () => {
             item.closest('.popup__wrapper').classList.remove('popup--active');
           }
 
+          showThanks();
           statusMessage.classList.remove('sk-three-bounce');
           button.textContent = buttonText;
         }).catch(error => {
