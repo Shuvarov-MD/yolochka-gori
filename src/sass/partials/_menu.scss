@@ -38,18 +38,24 @@
     background-color: $color-light;
     transition: all 0.3s linear;
 
+    &:first-of-type {
+      transform-origin: left top;
+    }
+
+    &:last-of-type {
+      transform-origin: left bottom;
+    }
+
     &--active {
       &:nth-of-type(2) {
         opacity: 0;
       }
   
       &:first-of-type {
-        transform-origin: left top;
         transform: rotate(45deg);
       }
   
       &:last-of-type {
-        transform-origin: left bottom;
         transform: rotate(-45deg);
       }
     }
