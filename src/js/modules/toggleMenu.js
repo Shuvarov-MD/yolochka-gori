@@ -11,9 +11,9 @@ const toggleMenu = () => {
 document.body.addEventListener('click', event => {
   const menuActive = document.querySelector('.menu__list--active');
 
-  if (event.target.closest('.menu__burger') || event.target.closest('.menu__item')) {
-    toggleMenu();
-  } else if (menuActive && !event.target.closest('.menu__list--active')) {
+  if (event.target.closest('.menu__burger') ||
+  event.target.closest('.menu__item') ||
+  menuActive && !event.target.closest('.menu__list--active')) {
     toggleMenu();
   }
 });

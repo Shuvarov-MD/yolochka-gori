@@ -95,6 +95,7 @@ h1, h2, h3, p {
     font-size: 0.875rem;
     font-weight: 700;
     z-index: 3;
+    text-transform: uppercase;
 
     @media screen and (max-width: 575px) {
       font-size: 0.75rem;

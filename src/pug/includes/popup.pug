@@ -3,8 +3,8 @@
     h3.popup__title.title.title--center Заказ обратного звонка
     p.popup__text.text--center Оставьте заявку и мы Вам перезвоним!
     form(action="#", method="get", class="form popup__form popup__form--callback")
-      input(type="text", name="form-callback--name", placeholder="Ваше имя", class="input popup__input")
-      input(type="tel", name="form-callback--tel", placeholder="Ваш телефон", class="input popup__input")
+      input(type="text", name="form-callback--name", placeholder="Ваше имя", class="input popup__input", required)
+      input(type="tel", name="form-callback--tel", placeholder="Ваш телефон", class="input popup__input", required)
       button(type="submit", class="button button--red popup__button") 
         span.button__text Отправить заявку
     button.popup__close 
@@ -24,8 +24,8 @@
       p.form__text Сумма заказа: 
         output.form__output.form__output--sum 10000 
         | рублей.
-      input(type="text", name="form-request--name", placeholder="Ваше имя", class="input popup__input")
-      input(type="tel", name="form-request--tel", placeholder="Ваш телефон", class="input popup__input")
+      input(type="text", name="form-request--name", placeholder="Ваше имя", class="input popup__input", required)
+      input(type="tel", name="form-request--tel", placeholder="Ваш телефон", class="input popup__input", required)
       button(type="submit", class="button button--red popup__button") 
         span.button__text Отправить заявку
     button.popup__close 
@@ -40,8 +40,8 @@
       p.form__text Сумма заказа: 
         output.form__output.form__output--sum 10000 
         | рублей.
-      input(type="text", name="form-set--name", placeholder="Ваше имя", class="input popup__input")
-      input(type="tel", name="form-set--tel", placeholder="Ваш телефон", class="input popup__input")
+      input(type="text", name="form-set--name", placeholder="Ваше имя", class="input popup__input", required)
+      input(type="tel", name="form-set--tel", placeholder="Ваш телефон", class="input popup__input", required)
       button(type="submit", class="button button--green popup__button") 
         span.button__text Отправить заявку
     button.popup__close 

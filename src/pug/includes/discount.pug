@@ -5,8 +5,8 @@ section.section.discount
         span.discount__subtitle на сумму от 100 000 рублей и получите дополнительную скидку 15%
       p.discount__text.text__center В декабре скидка 5%
       form(action="#", method="get", class="form discount__form")
-        input(type="text", name="form-discount--name", placeholder="Ваше имя", class="input discount__input")
-        input(type="tel", name="form-discount--tel", placeholder="Ваш телефон", class="input discount__input")
+        input(type="text", name="form-discount--name", placeholder="Ваше имя", class="input discount__input", required)
+        input(type="tel", name="form-discount--tel", placeholder="Ваш телефон", class="input discount__input", required)
         button(type="submit", class="button button--green discount__button")
           span.button__text ОСТАВИТЬ ЗАЯВКУ
 
