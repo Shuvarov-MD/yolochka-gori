@@ -367,6 +367,7 @@ h1, h2, h3, p {
   display: none;
   position: absolute;
   top: 50%;
+  z-index: 10;
   transform: translateY(-50%);
   fill: $color-dark;
   width: 20px;
